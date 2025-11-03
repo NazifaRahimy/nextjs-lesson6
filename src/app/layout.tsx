@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import NavBar from "@/component/NavBar";
 import "./globals.css";
-
+import Footer from "@/component/Fotter";
 export const metadata: Metadata = {
     title: {
         default: "Home",
@@ -17,6 +17,7 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
             <div className="w-full  p-5">
                 <NavBar />
                 {children}
+                <Footer/>
             </div>
         </body>
     </html>
